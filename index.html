@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+
+“http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rock Cottage</title>
+
+    <!-- these two will link local file in project folder -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/Javascript" href="myScript.js">
+
+    <!-- this is for google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Anton|Bitter|Lobster|Nanum+Gothic|Righteous|Rubik|Staatliches|Teko|Ubuntu" rel="stylesheet">
+
+    <!-- 
+
+    font-family: 'Righteous', cursive;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Nanum Gothic', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+
+    font-family: 'Bitter', serif;
+
+    font-family: 'Anton', sans-serif;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Staatliches', cursive;
+
+    font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Teko', sans-serif;
+
+    -->
+
+    <!-- this a current link to font awesome library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- this link is for googles icon library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="nav"><i class="fas fa-home"></i>
+        <h1>MARTINS POND</h1>
+    </div>
+<div class="img"></div>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="martins"> <a href="http://www.martinspond.org/">martinspond.org</a>
+        </div>
+    </div>
+    <div id="googleMap" style="width:100%;height:325px;"></div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(42.595801, -71.126168),
+                zoom: 15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4cNHvNhFjhE4cn-EshAHG6l_Vfw1lxo0&callback=myMap"></script>
+
+</body>
+
+</html>
